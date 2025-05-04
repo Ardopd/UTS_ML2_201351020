@@ -7,7 +7,7 @@ import joblib
 scaler = joblib.load('scaler.pkl')
 
 # Load model TFLite
-interpreter = tf.lite.Interpreter(model_path="productivity_model.tflite")
+interpreter = tf.lite.Interpreter(model_path="remote-work-productivity.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
